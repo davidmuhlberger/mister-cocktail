@@ -1,0 +1,9 @@
+<div id="start_bg">
+<h3>All your cocktails <br>at hand</h3>
+</div>
+
+<% @cocktails.each do |cocktail| %>
+  <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+<%end%>
+
+<%= link_to "Add new cocktail", new_cocktail_path, class: "btn btn-success"%>
