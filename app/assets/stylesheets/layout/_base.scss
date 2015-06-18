@@ -14,7 +14,7 @@
  }
 
  #background_list {
-  margin-top: 150px;
+  margin-top: 50px;
   margin-bottom: 150px
  }
 
@@ -28,7 +28,7 @@
  }
 
  .card_small {
-  background-color: orange;
+  background-color: hsla (random(365), random(365), random(365), 1);
   border-radius: 2px;
   border: 1px solid rgba(30, 30, 30, 0);
   padding: 30px;
