@@ -1,6 +1,8 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-6 card text-center">>
+    <div class="col-xs-12 col-sm-2">
+    </div>
+    <div class="col-xs-12 col-sm-8 card text-center">
       <h1><%=@cocktail.name %></h1>
 
       <% @cocktail.doses.each do |dose| %>
@@ -12,7 +14,7 @@
       </p>
       <%end%>
 
-      <h3>Add new ingredient</h3>
+      <h4>Add new ingredient</h4>
 
       <%= simple_form_for ([@cocktail, @dose]) do |f| %>
         <%= f.error_notification %>
@@ -22,6 +24,8 @@
 
         <%= f.button :submit, class: "btn btn-info"%>
       <% end %>
+    </div>
+    <div class="col-xs-12 col-sm-2">
     </div>
   </div>
 </div>
