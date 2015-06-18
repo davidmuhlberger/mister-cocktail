@@ -1,9 +1,19 @@
 <div id="start_bg">
 <h3>All your cocktails <br>at hand</h3>
 </div>
-
-<% @cocktails.each do |cocktail| %>
-  <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
-<%end%>
-
-<%= link_to "Add new cocktail", new_cocktail_path, class: "btn btn-success"%>
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-xs-6 col-sm-3 card_small text-center">
+        <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+      </div>
+    <%end%>
+  </div>
+  <div class="row">
+    <div class="col-xs-4 text-center"></div>
+    <div class="col-xs-4 text-center">
+      <%= link_to "Add new cocktail", new_cocktail_path, class: "btn btn-success"%>
+    </div>
+    <div class="col-xs-4 text-center"></div>
+  </div>
+</div>
