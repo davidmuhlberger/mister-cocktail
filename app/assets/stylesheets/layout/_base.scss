@@ -8,7 +8,8 @@
  #start_bg {
   background-image: asset-url("glasses_background.jpg");
   background-size: cover;
-  color: orange;
+  color: #EEEE00;
+  line-height: 2.0;
   height: 650px;
   padding: 150px 30px;
  }
@@ -28,10 +29,32 @@
  }
 
  .card_small {
-  background-color: orange;
+  background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border: 1px solid rgba(30, 30, 30, 0);
+  padding: 10px;
+  margin: 10px;
+  font-size: 22px;
+  height: 200px
+ }
+
+ .card_small a {
+  color: rgb(60, 60, 60)
+ }
+
+ .card_small:hover {
+  background-color: #EEEE00;
+  transition: background 1s;
+  a {
+    color: rgb(20, 20, 20)
+  }
+ }
+
+ .card_add_ingredient {
+  background-color: rgb(238, 233, 233);
   border-radius: 2px;
   border: 1px solid rgba(30, 30, 30, 0);
   padding: 30px;
-  margin: 30px;
-  font-size: 22px;
+  margin-top: 30px;
  }

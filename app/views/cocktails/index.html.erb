@@ -1,5 +1,5 @@
 <div id="start_bg">
-<h3>All your cocktails <br>at hand</h3>
+<h1>All your cocktails <br>at hand</h1>
 </div>
 <div class="container" id="background_list">
   <div class="row">
@@ -7,6 +7,7 @@
       <div class="col-xs-6 col-sm-3">
         <div class="card_small text-center">
           <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+          <%= image_tag cocktail.picture.url(:thumb) %>
       </div>
       </div>
     <%end%>
