@@ -5,9 +5,11 @@
     <div class="col-xs-12 col-sm-8 card text-center">
       <h1><%=@cocktail.name %></h1>
 
+      <%= image_tag @cocktail.picture.url(:medium) %>
+
       <% @cocktail.doses.each do |dose| %>
       <p>
-        <%=dose.description + " " + Ingredient.find(dose.ingredient_id).name%>
+        <%=dose.description + " " + dose.ingredient.name%>
         <%= link_to "[X]", dose_path(dose),
         method: :delete,
         data: { confirm: "Are you sure?" } %>
